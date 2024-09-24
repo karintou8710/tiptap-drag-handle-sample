@@ -1,0 +1,29 @@
+.tiptap {
+  position: relative;
+  padding: 1rem 2rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  p.ProseMirror-selectednode {
+    outline: 3px solid #a855f7;
+    outline-offset: 3px;
+  }
+
+  p.is-editor-empty:first-child::before {
+    color: #9ca3af;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+
+  .is-empty::before {
+    color: #9ca3af;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+}
